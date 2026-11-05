@@ -2,6 +2,10 @@
 
 SchedLab extends a standard UNIX shell with a scheduling subsystem for background jobs. Instead of starting every `&` job immediately, the shell enforces a concurrency limit **N** (`setconcurrency N`) and uses a scheduling policy (FIFO, SJF, Priority, or Adaptive) to choose which queued job starts when a slot opens.
 
+## Sprint 2 Review
+
+The Sprint 1 sequence diagrams still describe the system correctly, so no changes were needed. The three critical paths (submitting a background job, handling job completion, and the adaptive AIMD loop) depend on the scheduler, the policy queue, and the SIGCHLD handler, none of which exist yet in the Sprint 2 skeleton. The skeleton only implements the REPL, the parser, and fork/exec for foreground commands. Since the scheduler code has not been written, the control flow in the diagrams has not changed. They will be revisited in Sprint 3 once the scheduler, the queue, and the signal handler are implemented.
+
 ## Components
 
 | Component | Responsibility |
