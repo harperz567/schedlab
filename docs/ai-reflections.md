@@ -18,4 +18,8 @@ AI helped when I asked specific questions, but vague questions got generic answe
 
 ### Isobella Gordon
 
-(to be added)
+I already have Spellcast for another class so I used that probably the most since the biggest issue I run into writing code is spelling errors I can't seem to find. Normally I use other 'assistants' or tools like grammarly but for VirtualBox code and command line I've found this tool to be incredibly useful. Additionally I used Claude for assitance with select parts of the skelleton when I came across issues, and to clean everything up at the end since I tend to be hesitant about changing my code and usually comment out sections rather than deleting them off the bat so the end product can get a little messy.
+
+AI was definitely very helpful and I believe reduced the overall amount of time this assignment took because the ideation and base of a lot of it was straightforward to me but being able to have reliable tools when I hit roadblocks was definitely helpful.
+
+I'm pretty sure in the process of getting rid of comment garbage the AI also removed my actual comments which is unfortunate, but I understand it so I can always add them back.
