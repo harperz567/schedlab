@@ -3,6 +3,7 @@
 #include <string.h>
 #include "builtins.h"
 #include "parser.h"
+#include "exec.h"
 
 #define PROMPT "schedlab> "
 
@@ -38,11 +39,12 @@ int main(void)
         if (cmd.argc == 0)
             continue;
 
-        /* Temporary: show the parse result */
-        for (int i = 0; i < cmd.argc; i++)
-            printf("argv[%d] = %s\n", i, cmd.argv[i]);
-        printf("pipe=%d redirect=%d background=%d\n",
-               cmd.has_pipe, cmd.has_redirect, cmd.background);
+        /* Built-ins run inside the shell process */
+        if (run_builtin(cmd.argv))
+            continue;
+
+        /* Everything else runs in a child process */
+        run_command(&cmd);
     }
 
     free(line);
