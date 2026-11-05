@@ -12,7 +12,9 @@ AI also had limits. Long code blocks pasted over SSH got garbled, and one file c
 
 ### Patrick Araujo
 
-(to be added)
+I used DeepSeek this sprint, mostly to understand the skeleton code, and I asked it to walk me through the REPL, the parser, and what fork and exec do, which helped most when it used analogies instead of code.
+
+AI helped when I asked specific questions, but when I asked something vague the answer came back generic and I had to ask again, and it also failed when it assumed I already had extensive knowledge of C so I had to slow it down, which taught me to check its answers against the real code instead of trusting them.
 
 ### Isobella Gordon
 
